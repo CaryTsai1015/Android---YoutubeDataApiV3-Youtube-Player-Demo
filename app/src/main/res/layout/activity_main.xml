@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@color/col_white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/youtubelist_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/col_transparent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_mingjinghuopai_gaitubao_com_33x33"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="100dp"
+            android:gravity="center"
+            android:text="明鏡新聞網-點點今天事"
+            android:textColor="@color/col_black" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/youtubelist_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.4">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/main_naviview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/col_transparent"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="100dp"
+            android:id="@+id/tweet_button"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="135dp"
+            android:background="@color/col_transparent"
+            android:textColor="@color/col_black"
+            android:drawableTop="@drawable/ic_twitter"
+            android:textSize="14dp"
+            android:text="成為推友"/>
+        <Button
+            android:layout_width="100dp"
+            android:id="@+id/facebook_button"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/col_transparent"
+            android:textColor="@color/col_black"
+            android:textSize="14dp"
+            android:drawableTop="@drawable/ic_facebook"
+            android:text="訂閱臉書"/>
+
+        <Button
+            android:id="@+id/main_button"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="135dp"
+            android:background="@color/col_transparent"
+            android:drawableTop="@drawable/ic_home"
+            android:textColor="@color/col_black"
+            android:textSize="14dp"
+            android:text="首頁"/>
+
+
+    </android.support.design.widget.NavigationView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/mingjinghuopai_AdView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-6428195540030903/8119215442">
+    </com.google.android.gms.ads.AdView>
+</LinearLayout>

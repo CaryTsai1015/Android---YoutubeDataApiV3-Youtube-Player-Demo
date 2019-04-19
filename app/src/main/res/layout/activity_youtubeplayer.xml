@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="@color/col_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tsaicary.youtubeplayer.MainActivity">
+
+    <view
+        android:id="@+id/youtubeview"
+        class="com.google.android.youtube.player.YouTubePlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/youtubebuttonstop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暫停播放" />
+
+        <Button
+            android:id="@+id/youtubebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="點擊播放" />
+
+
+
+        <!--<Button-->
+            <!--android:id="@+id/previousbutton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBaseline="@+id/youtubebutton"-->
+            <!--android:layout_alignBottom="@+id/youtubebutton"-->
+            <!--android:layout_marginEnd="26dp"-->
+            <!--android:layout_toStartOf="@+id/youtubebutton"-->
+            <!--android:text="上一首" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/nextbutton"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignBaseline="@+id/youtubebutton"-->
+            <!--android:layout_alignBottom="@+id/youtubebutton"-->
+            <!--android:layout_marginStart="25dp"-->
+            <!--android:layout_toEndOf="@+id/youtubebutton"-->
+            <!--android:text="下一首" />-->
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_youtube_textview"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/youtubeview"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/col_black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/rounded_white">
+
+        <TextView
+            android:id="@+id/publishedAt_youtube_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:text="主講人：何頻"
+            android:textColor="@color/col_black"/>
+
+        <TextView
+            android:id="@+id/viewCount_youtube_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center_vertical"
+            android:paddingTop="5dp"
+            android:text=""
+            android:textColor="@color/col_black"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

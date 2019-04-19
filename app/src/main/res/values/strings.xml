@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">明鏡新聞-點點今天事</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="publishedAt">主講人：何頻</string>
+    <string name="viewCount">點閱人數：</string>
+    <string name="banner_ad_unit_id">ca-app-pub-6428195540030903~2896068104</string>
+</resources>
